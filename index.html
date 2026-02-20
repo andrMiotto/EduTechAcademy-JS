@@ -10,10 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#1E1E1E] text-[#F9F9F9]">
+<body class=" text-[#F9F9F9]">
 
     <!-- HEADER -->
-    <header class="w-full border-b border-[#444444] bg-[#1E1E1E]">
+    <header class="w-full border-b border-[#444444] bg-[#0b1220]">
         <div class="max-w-[1920px] mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -61,10 +61,10 @@
         </div>
     </header>
 
-    <main>
+    <main class="bg-[#0b1220]">
 
         <!-- HERO -->
-        <section class="hero flex justify-center">
+        <section class="hero flex justify-center bg-[#0b1220]">
             <div class=" hero-content flex justify-center items-center flex-col">
                 <h1 class="hero-main-phrase text-2xl font-bold mt-10">
                     Construa seu futuro com a EduTech Academy
@@ -76,7 +76,7 @@
         </section>
 
         <!-- CURSOS -->
-        <section class="courses w-full">
+        <section class="courses w-full bg-[#0b1220]">
             <div class="max-w-[1920px] mx-auto px-6">
                 <h2 class="courses-title text-xl mt-10 mb-3">Nossos Cursos</h2>
 
@@ -92,7 +92,7 @@
                             <p class="course-hours text-sm text-gray-400">120 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">EAD</p>
                             <button type="submit"
-                                class="mt-auto text-sm bg-[#4DA6FF] hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
+                                class="mt-auto text-sm bg-blue-700 hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
                                 Ver detalhes
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                             <p class="course-hours text-sm text-gray-400">100 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">Presencial</p>
                             <button type="submit"
-                                class="mt-auto text-sm bg-[#4DA6FF] hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
+                                class="mt-auto text-sm bg-blue-700 hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
                                 Ver detalhes
                             </button>
                         </div>
@@ -121,20 +121,21 @@
                             <p class="course-hours text-sm text-gray-400">80 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">EAD</p>
                             <button type="submit"
-                                class="mt-auto text-sm bg-[#4DA6FF] hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
+                                class="mt-auto text-sm bg-blue-700 hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
                                 Ver detalhes
                             </button>
                         </div>
                     </article>
 
-                    <article class="card-course flex flex-col  w-full   border border-[#2C2C2C] rounded-lg overflow-hidden">
+                    <article
+                        class="card-course flex flex-col  w-full   border border-[#2C2C2C] rounded-lg overflow-hidden">
                         <img src="/images/ux-design.jpg" alt="UX UI Design" class="w-full h-40 object-cover">
                         <div class="flex flex-col flex-1 p-4">
                             <h3 class="course-name font-semibold text-white mb-2">UX/UI Design</h3>
                             <p class="course-hours text-sm text-gray-400">90 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">Presencial</p>
                             <button type="submit"
-                                class="mt-auto text-sm bg-[#4DA6FF] hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
+                                class="mt-auto text-sm bg-blue-700 hover:bg-[#3b8de0] transition rounded-md py-2 text-white">
                                 Ver detalhes
                             </button>
                         </div>
@@ -151,11 +152,9 @@
 
                 <h2 class="enrollment-title text-xl mt-10 mb-8">Matrícula</h2>
 
-                <div class="enrollment-content grid grid-cols-2 ">
-
+                <div class="enrollment-content grid grid-cols-1 lg:grid-cols-3 gap-10">
                     <!-- FORMULÁRIO -->
-                    <div class="enrollment-container border-2 p-4 border-b border-[#444444] rounded-sm">
-
+                    <div class="enrollment-container lg:col-span-2 bg-[#0b1220] border border-[#1e293b] p-8 rounded-xl">
                         <h3 class="enrollment-subtitle text-xl mb-3">Formulário de Matrícula</h3>
 
                         <form class="enrollment-form ">
@@ -164,27 +163,32 @@
 
                                 <div class="form-group grid grid-cols-1 w-full ">
                                     <label class="font-bold ">Nome Completo *</label>
-                                    <input type="text" placeholder="Digite seu nome completo" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder="Digite seu nome completo"
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Email *</label>
-                                    <input type="email" placeholder="Digite seu email" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder="Digite seu nome completo"
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Telefone *</label>
-                                    <input type="text" placeholder="(00) 00000-0000" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder="Digite seu nome completo"
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">CPF *</label>
-                                    <input type="text" placeholder="000.000.000-00" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder="Digite seu nome completo"
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group full-width grid grid-cols-1 w-full">
                                     <label class="font-bold">Curso Desejado *</label>
-                                    <select class="bg-stone-700 rounded-sm">
+                                    <select
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                         <option selected disabled>Selecione um curso</option>
                                         <option>Desenvolvimento Web</option>
                                         <option>Data Science</option>
@@ -195,32 +199,37 @@
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">CEP *</label>
-                                    <input type="text" placeholder="00000-000" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder=""
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
-                                <div class="form-group grid grid-cols-1 w-full" >
+                                <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold  ">Rua *</label>
-                                    <input type="text" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder=""
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Bairro *</label>
-                                    <input type="text" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder=""
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Cidade *</label>
-                                    <input type="text" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder=""
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group full-width grid grid-cols-1 w-full">
                                     <label class="font-bold">Estado *</label>
-                                    <input type="text" class="border-2 border-b border-[#444444] rounded-sm">
+                                    <input type="text" placeholder=""
+                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                             </div>
 
-                            <button type="submit" class="enrollment-button">
+                            <button type="submit" class="enrollment-button bg-blue-700">
                                 Enviar Matrícula
                             </button>
 
@@ -229,11 +238,12 @@
                     </div>
 
                     <!-- ÁREAS DO CONHECIMENTO -->
-                    <aside class="knowledge-areas">
+                    <aside class="knowledge-areas bg-[#0b1220] border border-[#1e293b] p-8 rounded-xl h-fit">
+                        <h3 class="text-lg font-semibold text-white mb-6">
+                            Áreas do Conhecimento
+                        </h3>
 
-                        <h3 class="knowledge-title">Áreas do Conhecimento</h3>
-
-                        <ul class="knowledge-list">
+                        <ul class="space-y-3 text-gray-300">
                             <li>Tecnologia da Informação</li>
                             <li>Administração e Negócios</li>
                             <li>Marketing Digital</li>
@@ -243,7 +253,6 @@
                             <li>Educação</li>
                             <li>Gastronomia</li>
                         </ul>
-
                     </aside>
 
                 </div>
@@ -255,7 +264,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer bg-[#0b1220]">
 
         <div class="container footer-inner">
 
