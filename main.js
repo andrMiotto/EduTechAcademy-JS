@@ -18,6 +18,8 @@ const enrollmentElement = document.querySelector(".enrollment")
 const enrollmentTitleElement = document.querySelector(".enrollment-title")
 const enrollmentSubTitleElement = document.querySelector(".enrollment-subtitle")
 
+const knowledgeElement = document.querySelector(".knowledge-areas")
+
 
 themeElement.addEventListener("click", () => {
 
@@ -98,6 +100,16 @@ themeElement.addEventListener("click", () => {
 
         enrollmentTitleElement.classList.remove("text-black");
         enrollmentTitleElement.classList.add("text-slate-50");
+    }
+    if (knowledgeElement.classList.contains("bg-[#0b1220]")) {
+
+        knowledgeElement.classList.remove("bg-[#0b1220]");
+        knowledgeElement.classList.add("bg-slate-50");
+
+    }else{
+knowledgeElement.classList.remove("bg-slate-50");
+        knowledgeElement.classList.add("bg-[#0b1220]");
+        
     }
 
 
