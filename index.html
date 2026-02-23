@@ -13,7 +13,7 @@
 <body class=" text-[#F9F9F9]">
 
     <!-- HEADER -->
-    <header class="w-full border-b border-[#444444] bg-[#0b1220]">
+    <header class="header w-full border-b border-[#444444] bg-[#0b1220]">
         <div class="max-w-[1920px] mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -24,7 +24,7 @@
             </div>
 
             <!-- Menu Desktop -->
-            <nav class="hidden md:flex">
+            <nav class="navigation-buttons hidden md:flex">
                 <ul class="flex items-center gap-8 text-[#F9F9F9] font-medium">
                     <li>
                         <a href="/index.html" class="hover:text-[#66BFFF] transition">
@@ -47,8 +47,9 @@
                         </a>
                     </li>
                     <li>
-                        <img src="/images/moon.svg" alt="Alternar tema"
-                            class="h-5 cursor-pointer opacity-80 hover:opacity-100 transition">
+                        <button class="change-theme"><img src="/images/moon.svg" alt="Alternar tema"
+                                class="h-5 cursor-pointer opacity-80 hover:opacity-100 transition"></button>
+
                     </li>
                 </ul>
             </nav>
@@ -61,7 +62,7 @@
         </div>
     </header>
 
-    <main class="bg-[#0b1220]">
+    <main class=" main bg-[#0b1220]">
 
         <!-- HERO -->
         <section class="hero flex justify-center bg-[#0b1220]">
@@ -88,7 +89,7 @@
                         <img src="/images/fullstack.jpg" alt="Desenvolvimento Web Fullstack"
                             class="w-full h-40 object-cover">
                         <div class="flex flex-col flex-1 p-4">
-                            <h3 class="course-name font-semibold text-white mb-2">Desenvolvimento Web Fullstack</h3>
+                            <h3 class="course-name font-semibold mb-2">Desenvolvimento Web Fullstack</h3>
                             <p class="course-hours text-sm text-gray-400">120 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">EAD</p>
                             <button type="submit"
@@ -103,7 +104,7 @@
                         <img src="/images/data-science.jpg" alt="Data Science e Machine Learning"
                             class="w-full h-40 object-cover">
                         <div class="flex flex-col flex-1 p-4">
-                            <h3 class="course-name font-semibold text-white mb-2">Data Science & Machine Learning</h3>
+                            <h3 class="course-name font-semibold mb-2">Data Science & Machine Learning</h3>
                             <p class="course-hours text-sm text-gray-400">100 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">Presencial</p>
                             <button type="submit"
@@ -117,7 +118,7 @@
                         class="card-course flex flex-col  w-full   border border-[#2C2C2C] rounded-lg overflow-hidden">
                         <img src="/images/marketing.jpg" alt="Marketing Digital e SEO" class="w-full h-40 object-cover">
                         <div class="flex flex-col flex-1 p-4">
-                            <h3 class="course-name font-semibold text-white mb-2">Marketing Digital & SEO</h3>
+                            <h3 class="course-name font-semibold mb-2">Marketing Digital & SEO</h3>
                             <p class="course-hours text-sm text-gray-400">80 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">EAD</p>
                             <button type="submit"
@@ -131,7 +132,7 @@
                         class="card-course flex flex-col  w-full   border border-[#2C2C2C] rounded-lg overflow-hidden">
                         <img src="/images/ux-design.jpg" alt="UX UI Design" class="w-full h-40 object-cover">
                         <div class="flex flex-col flex-1 p-4">
-                            <h3 class="course-name font-semibold text-white mb-2">UX/UI Design</h3>
+                            <h3 class="course-name font-semibold mb-2">UX/UI Design</h3>
                             <p class="course-hours text-sm text-gray-400">90 horas</p>
                             <p class="modality text-sm text-gray-400 mb-4">Presencial</p>
                             <button type="submit"
@@ -146,15 +147,14 @@
         </section>
 
         <!-- MATRÍCULA -->
-        <section class="enrollment mt-10">
-
+        <section class="enrollment mt-10 ">
             <div class="max-w-[1920px] mx-auto px-6 ">
 
                 <h2 class="enrollment-title text-xl mt-10 mb-8">Matrícula</h2>
 
                 <div class="enrollment-content grid grid-cols-1 lg:grid-cols-3 gap-10">
                     <!-- FORMULÁRIO -->
-                    <div class="enrollment-container lg:col-span-2 bg-[#0b1220] border border-[#1e293b] p-8 rounded-xl">
+                    <div class="enrollment-container lg:col-span-2 border border-[#1e293b] p-8 rounded-xl">
                         <h3 class="enrollment-subtitle text-xl mb-3">Formulário de Matrícula</h3>
 
                         <form class="enrollment-form ">
@@ -164,31 +164,31 @@
                                 <div class="form-group grid grid-cols-1 w-full ">
                                     <label class="font-bold ">Nome Completo *</label>
                                     <input type="text" placeholder="Digite seu nome completo"
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Email *</label>
                                     <input type="text" placeholder="Digite seu nome completo"
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Telefone *</label>
                                     <input type="text" placeholder="Digite seu nome completo"
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">CPF *</label>
                                     <input type="text" placeholder="Digite seu nome completo"
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group full-width grid grid-cols-1 w-full">
                                     <label class="font-bold">Curso Desejado *</label>
                                     <select
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        class="w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                         <option selected disabled>Selecione um curso</option>
                                         <option>Desenvolvimento Web</option>
                                         <option>Data Science</option>
@@ -200,31 +200,31 @@
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">CEP *</label>
                                     <input type="text" placeholder=""
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="cep-input w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold  ">Rua *</label>
                                     <input type="text" placeholder=""
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="rua-input w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Bairro *</label>
                                     <input type="text" placeholder=""
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="bairro-input w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group grid grid-cols-1 w-full">
                                     <label class="font-bold">Cidade *</label>
                                     <input type="text" placeholder=""
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="cidade-input w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                                 <div class="form-group full-width grid grid-cols-1 w-full">
                                     <label class="font-bold">Estado *</label>
                                     <input type="text" placeholder=""
-                                        class="w-full bg-[#0f172a] border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                                        class="estado-input  w-full  border border-[#1e293b] text-gray-300 placeholder-gray-500 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                                 </div>
 
                             </div>
@@ -297,6 +297,7 @@
         </div>
 
     </footer>
+    <script src="main.js"></script>
 
 </body>
 
